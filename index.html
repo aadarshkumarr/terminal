@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+  
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ9TR5T9S2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-QJ9TR5T9S2');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aadarsh Kumar | Indian Web Developer | Terminal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
+  </head>
+  <body>
+    <div id="terminal">
+      <a id="before"></a>
+      <embed src="./assets/bgMusic.mp3" loop="true" autostart="true" width="2" height="0">
+        <bgsound src="./assets/bgMusic.mp3" loop="infinite"></bgsound>
+        <audio autoplay loop>
+          <source src="./assets/bgMusic.mp3" type="audio/mp3" />
+          <audio controls autoplay>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="./assets/bgMusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </audio>
+    </div>
+    <div id="command" onclick="$('texter').focus();">
+      <textarea
+        type="text"
+        id="texter"
+        onkeyup="typeIt(this, event)"
+        onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)"
+        onkeypress="typeIt(this, event);"
+        autofocus
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+      </div>
+    </div>
+    <script src="js/caret.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+
+</html>
